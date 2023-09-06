@@ -4,15 +4,13 @@ import { If, Then, Else, While, Match, Case, DefaultCase } from 'burokku'
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false)
-  const [age, setAge] = useState(18)
-
-
+  const [age, setAge] = useState(20)
 
   return (
     <main>
-      <button onClick={e => setLoggedIn(!loggedIn)}>Change State</button>
+      <button onClick={e => setLoggedIn(!loggedIn)}>Change State</button> <p></p>
 
-      <p>if, then, else</p>
+      <b>If, Then, Else <span>✅</span></b>
       <If condition={loggedIn}>
         <Then>
           <span>Yes user logged in.</span>
@@ -23,8 +21,7 @@ const App = () => {
       </If>
       <p> </p>
       <p>-------------</p>
-
-      <p> while, else</p>
+      <b> While, Else <span>✅</span></b>
       <While condition={loggedIn}>
         <div>User Logged in</div>
         <Else>
@@ -32,19 +29,21 @@ const App = () => {
         </Else>
       </While>
       <p>-------------</p>
-      <p>match, case, DefaultCase <span>✅</span></p>
+      <b>match, case, DefaultCase <span>✅</span></b>
+      <p></p>
       <Match>
-        <Case condition={true}>
-          Age is greeter than 18
+        <Case condition={age === 20}>
+          Age is 20
         </Case>
-        <Case condition={age < 25}>
-          Age is less than 25
+        <Case condition={age < 50}>
+          Age is less 50
         </Case>
-        <DefaultCase>
-          <span>all conditions are false</span>
-        </DefaultCase>
+        <Case condition={age > 5}>
+          Age is greater 5
+        </Case>
       </Match>
       <p></p>
+      <p>-------------</p>
     </main>
   )
 }

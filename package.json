@@ -1,7 +1,7 @@
 {
   "name": "burokku",
-  "version": "0.0.13",
-  "description": "a lightweight tool for conditionally rendering react block of components",
+  "version": "0.1.0",
+  "description": "Lightweight Tool For Conditionally Rendering React Components",
   "author": "@Seyifunmitan",
   "license": "MIT",
   "repository": "@Seyifunmitan/burokku_",
@@ -49,5 +49,6 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "keywords": ["Conditionally", "react", "components", "rendering", "if", "else", "switchcase"]
 }
