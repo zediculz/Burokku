@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React, { useState } from 'react'
 import { If, Then, Else, While, Match, Case, DefaultCase } from 'burokku'
 
@@ -31,21 +32,19 @@ const App = () => {
         </Else>
       </While>
       <p>-------------</p>
-
-      <p>match, case, DefaultCase</p>
+      <p>match, case, DefaultCase <span>✅</span></p>
       <Match>
         <Case condition={true}>
           Age is greeter than 18
         </Case>
-        <Case condition={age < 10}>
-          Age is less than 10
+        <Case condition={age < 25}>
+          Age is less than 25
         </Case>
         <DefaultCase>
           <span>all conditions are false</span>
         </DefaultCase>
       </Match>
-      <p>-------------</p>
-      <p> </p>
+      <p></p>
     </main>
   )
 }

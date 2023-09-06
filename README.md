@@ -2,10 +2,10 @@
 
 > Made with create-react-library
 
-[![NPM](https://img.shields.io/npm/v/burokku.svg)](https://www.npmjs.com/package/burokku) 
+[![NPM](https://img.shields.io/npm/v/burokku.svg)](https://www.npmjs.com/package/burokku)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Contact](https://img.shields.io/badge/contact-@zediculz-blue.svg?style=flat&logo=twitter)](https://twitter.com/zediculz)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-if?label=bundle%20size&logo=webpack)](https://bundlephobia.com/result?p=burokku)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/burokku?label=bundle%20size&logo=webpack)](https://bundlephobia.com/result?p=burokku)
 
 ## Install
 
@@ -15,7 +15,7 @@ npm install --save burokku
 
 ## Usage
 
-### without Borukku 
+### without Borukku
 ```jsx
  const [loggedIn, setLoggedIn] = useState(false)
 
