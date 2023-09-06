@@ -1,6 +1,6 @@
 
 # Burokku
-A Lightweight Tool For Conditionally Rendering React Components
+A Lightweight Tool For Conditionally Rendering React Components.
 
 ## Install
 
@@ -13,7 +13,7 @@ npm install --save burokku
 
  const App = () => {
    return (
-     {loggedIn ? 'do something' : "user not logged in"}
+     {loggedIn ? 'user logged in' : "user not logged in"}
    )
  }
 
