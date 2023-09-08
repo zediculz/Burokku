@@ -2,25 +2,20 @@ import React from 'react'
 
 const If = (props) => {
   const { condition, children } = props
-  return <div>{condition ? children[0] : children[1]}</div>
+  return <>{condition ? children[0] : children[1]}</>
 }
 
 const Then = (props) => {
-  return <div>{props.children}</div>
+  return <>{props.children}</>
 }
 
 const Else = (props) => {
-  return <div>{props.children}</div>
+  return <>{props.children}</>
 }
 
 const While = (props) => {
   const { condition, children } = props
-
-  if (condition) {
-    return <div>{children[0]}</div>
-  } else {
-    return <div>{children[1]}</div>
-  }
+  return <>{condition ? children[0] : children[1]}</>
 }
 
 export { If, Then, Else, While }

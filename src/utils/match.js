@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 // works like switch case
 // renders all true condtion passed tp each case components
 // defaultCase is redner when all the condition in cases are false
