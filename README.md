@@ -7,7 +7,7 @@ A Lightweight Tool For Conditionally Rendering React Components.
 ```bash
 npm install --save burokku
 ```
-### without Borukku
+### without Burokku
 ```jsx
  const [loggedIn, setLoggedIn] = useState(false)
 
@@ -20,7 +20,7 @@ npm install --save burokku
  }
 
 ```
-### with Borukku
+### with Burokku
 ```jsx
 import { If, Then, Else } from 'burokku'
 const [loggedIn, setLoggedIn] = useState(false)
@@ -42,7 +42,7 @@ function App() {
 ```
 ## More from Burokku
 
-#### While, Else 
+#### While
 ```javascript
 import { While, Else } from 'burokku'
 const [loggedIn, setLoggedIn] = useState(false)
@@ -60,7 +60,7 @@ function App() {
 
 ```
 
-#### Match, Case, DefaultCase
+#### Match
 ```javascript
 import { Match, Case, DefaultCase } from 'burokku'
 const [age, setAge] = useState(20)

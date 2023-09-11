@@ -1,10 +1,10 @@
 {
   "name": "burokku",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Lightweight Tool For Conditionally Rendering React Components",
   "author": "@Seyifunmitan",
   "license": "MIT",
-  "repository": "@Seyifunmitan/burokku_",
+  "repository": "@Seyifunmitan/burokku",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
