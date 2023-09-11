@@ -45,7 +45,7 @@ const App = () => {
       <p></p>
       <p>-------------</p>
       <b>Show</b>
-      <Show when={loggedIn} fallback={<p>hello, click here to login</p>}>
+      <Show condition={loggedIn} fallback={<p>hello, click here to login</p>}>
         <div>You are logged In, click here to logout</div>
       </Show>
     </main>

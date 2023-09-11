@@ -12,6 +12,8 @@ npm install --save burokku
  const [loggedIn, setLoggedIn] = useState(false)
 
  const App = () => {
+
+  // conditional rendering
    return (
      {loggedIn ? 'user logged in' : "user not logged in"}
    )
@@ -23,6 +25,7 @@ npm install --save burokku
 import { If, Then, Else } from 'burokku'
 const [loggedIn, setLoggedIn] = useState(false)
 
+// cleaner conditional rendering
 function App() {
   return (
     <If condition={loggedIn}>
@@ -82,9 +85,28 @@ function App() {
 } 
 
 ```
-## License
 
-MIT © [@Seyifunmitan](https://github.com/@Seyifunmitan)
+#### Show
+```javascript
+import { Show } from 'burokku'
+const [loggedIn, setLoggedIn] = useState(false)
+
+function App() {
+
+  // solidjs like SHOW 
+  return (
+    <Show 
+    condition={loggedIn} 
+    fallback={<p>hello, click here to login</p>}>
+        <div>You are logged In, click here to logout</div>
+    </Show>
+  )
+} 
+
+```
+
+## License
+MIT
 
 
 [![NPM](https://img.shields.io/npm/v/burokku.svg)](https://www.npmjs.com/package/burokku)
