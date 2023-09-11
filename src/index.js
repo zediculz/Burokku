@@ -5,4 +5,6 @@ import { If, Then, Else, While } from './utils/if-block.js'
 
 import { Match, Case, DefaultCase } from './utils/match.js'
 
-export { If, Then, While, Else, Match, Case, DefaultCase }
+import { Show } from './utils/show.js'
+
+export { If, Then, While, Else, Match, Case, DefaultCase, Show }

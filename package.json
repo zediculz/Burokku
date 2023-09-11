@@ -1,6 +1,6 @@
 {
   "name": "burokku",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Lightweight Tool For Conditionally Rendering React Components",
   "author": "@Seyifunmitan",
   "license": "MIT",

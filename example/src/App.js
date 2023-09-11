@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, { useState } from 'react'
-import { If, Then, Else, While, Match, Case, DefaultCase } from 'burokku'
+import { If, Then, Else, While, Match, Case, Show } from 'burokku'
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false)
@@ -44,6 +44,10 @@ const App = () => {
       </Match>
       <p></p>
       <p>-------------</p>
+      <b>Show</b>
+      <Show when={loggedIn} fallback={<p>hello, click here to login</p>}>
+        <div>You are logged In, click here to logout</div>
+      </Show>
     </main>
   )
 }
