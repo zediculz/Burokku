@@ -1,10 +1,10 @@
 {
   "name": "burokku",
-  "version": "0.2.1",
-  "description": "Lightweight Tool For Conditionally Rendering React Components",
-  "author": "@Seyifunmitan",
+  "version": "0.2.2",
+  "description": "lightweight tool for conditionally rendering React component",
+  "author": "@zediculz",
   "license": "MIT",
-  "repository": "@Seyifunmitan/burokku",
+  "repository": "@zediculz/burokku",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -50,5 +50,5 @@
   "files": [
     "dist"
   ],
-  "keywords": ["Conditionally", "react", "components", "rendering", "if", "else", "switchcase"]
+  "keywords": ["conditional", "react", "component", "rendering", "if", "else", "switch case"]
 }
