@@ -13,9 +13,4 @@ const Else = (props) => {
   return <>{props.children}</>
 }
 
-const While = (props) => {
-  const { condition, children } = props
-  return <>{condition ? children[0] : children[1]}</>
-}
-
-export { If, Then, Else, While }
+export { If, Then, Else }

@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 
 function Show(props) {
-  const { children, fallback } = props
-  if (props.condition) {
+  const { children, fallback, condition } = props
+  if (condition) {
     return <>{children}</>
   }
 

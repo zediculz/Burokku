@@ -21,13 +21,6 @@ const App = () => {
       </If>
       <p> </p>
       <p>-------------</p>
-      <b> While, Else <span>✅</span></b>
-      <While condition={loggedIn}>
-        <div>User Logged in</div>
-        <Else>
-          <span>User Logged out</span>
-        </Else>
-      </While>
       <p>-------------</p>
       <b>match, case, DefaultCase <span>✅</span></b>
       <p></p>

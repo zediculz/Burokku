@@ -11,6 +11,7 @@ function Match(props) {
   const childTrueCondition = children.filter(
     (child) => child.props.condition === true
   )
+
   if (childTrueCondition.length !== 0) {
     return (
       <>

@@ -1,6 +1,6 @@
 
 # Burokku
-A Lightweight Tool For Conditionally Rendering React Components.
+A lightweight tool for conditionally rendering React components.
 
 ## Install
 
@@ -41,24 +41,6 @@ function App() {
 
 ```
 ## More from Burokku
-
-#### While
-```javascript
-import { While, Else } from 'burokku'
-const [loggedIn, setLoggedIn] = useState(false)
-
-function App() {
-  return (
-    <While condition={loggedIn}>
-        <div>User Logged in </div>
-        <Else>
-          <span>User Logged out</span>
-        </Else>
-    </While>
-  )
-} 
-
-```
 
 #### Match
 ```javascript
