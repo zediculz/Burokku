@@ -1,48 +1,86 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React, { useState } from 'react'
-import { If, Then, Else, While, Match, Case, Show } from 'burokku'
+import React, {Fragment} from 'react'
+import {Header, Logo, HStack, Block, VStack, Box, useTheme} from 'sutairu'
+import 'sutairu/dist/index.css'
 
 const App = () => {
-  const [loggedIn, setLoggedIn] = useState(false)
-  const [age, setAge] = useState(20)
-
+  
   return (
-    <main>
-      <button onClick={e => setLoggedIn(!loggedIn)}>Change State</button> <p></p>
+    <Fragment>
 
-      <b>If, Then, Else <span>✅</span></b>
-      <If condition={loggedIn}>
-        <Then>
-          <span>Yes user logged in.</span>
-        </Then>
-        <Else>
-          <span>user is not logged in.</span>
-        </Else>
-      </If>
-      <p> </p>
-      <p>-------------</p>
-      <p>-------------</p>
-      <b>match, case, DefaultCase <span>✅</span></b>
-      <p></p>
-      <Match>
-        <Case condition={age === 20}>
-          Age is 20
-        </Case>
-        <Case condition={age < 50}>
-          Age is less 50
-        </Case>
-        <Case condition={age > 5}>
-          Age is greater 5
-        </Case>
-      </Match>
-      <p></p>
-      <p>-------------</p>
-      <b>Show</b>
-      <Show condition={loggedIn} fallback={<p>hello, click here to login</p>}>
-        <div>You are logged In, click here to logout</div>
-      </Show>
-    </main>
+        <Header type="logo" theme={htheme}>
+          <Logo>
+            <h1>App Name</h1>
+          </Logo>
+      </Header>
+
+      <Block theme={b}>
+        <h2>important header</h2>
+        <p>im a block child</p>
+      </Block>
+
+      <HStack theme={hvar}>
+        <Box theme={hbox}>
+          <p>hi am the hstack box</p>
+        </Box>
+        <Box theme={hbox}>
+          <p>hi am the hstack box too</p>
+        </Box>
+        <Box theme={hbox}>
+          <p>hi, yeah me too</p>
+        </Box>
+      </HStack>
+
+      <VStack theme={vvar}>
+        <Box theme={vbox}>
+          <p>hi am the vstack box</p>
+        </Box>
+        <Box theme={vbox}>
+          <p>hi am the vstack box too</p>
+        </Box>
+      </VStack>
+
+      <Block theme={b}>
+        <h2>important header</h2>
+        <p>im a block child</p>
+      </Block>
+
+    </Fragment>
   )
+}
+
+const htheme = useTheme({
+  type: 'logo',
+  color: '#222',
+  fontSize: '15px',
+})
+
+const hvar = {
+  height: '200px',
+  width: '100%'
+}
+
+const hbox = {
+  height: '80%',
+  width: '30%',
+  backgroundColor: 'green',
+}
+
+const vvar = {
+  height: '300px',
+  width: '100%'
+}
+
+const vbox = {
+  height: '40%',
+  width: '90%',
+  backgroundColor: 'green',
+}
+
+const b = {
+  height: '200px',
+  width: '100%',
+  backgroundColor: 'pink',
 }
 
 export default App
