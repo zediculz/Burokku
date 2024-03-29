@@ -1,7 +1,7 @@
 {
-  "name": "burokku-example",
-  "homepage": ".",
-  "version": "0.0.0",
+  "name": "sutairu-example",
+  "homepage": "http://.",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
@@ -26,5 +26,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This example was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
