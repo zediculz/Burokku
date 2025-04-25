@@ -653,7 +653,7 @@
     "memory-fs": "^0.4.1",
     "memorystream": "^0.3.1",
     "map-cache": "^0.2.2",
-    "mdn-data": "^2.0.4",
+    "mdn-data": "^2.19.0",
     "merge-descriptors": "^1.0.1",
     "methods": "^1.1.2",
     "merge2": "^1.4.1",
