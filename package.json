@@ -421,7 +421,7 @@
     "get-value": "^2.0.6",
     "get-intrinsic": "^1.2.1",
     "get-stream": "^4.1.0",
-    "function.prototype.name": "^1.1.6",
+    "function.prototype.name": "^1.1.8",
     "get-symbol-description": "^1.0.0",
     "get-own-enumerable-property-symbols": "^3.0.2",
     "get-stdin": "^6.0.0",
