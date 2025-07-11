@@ -540,7 +540,7 @@
     "is-plain-obj": "^1.1.0",
     "is-reference": "^1.2.1",
     "is-root": "^2.1.0",
-    "is-regex": "^1.1.4",
+    "is-regex": "^1.2.1",
     "is-set": "^2.0.2",
     "is-resolvable": "^1.1.0",
     "is-string": "^1.0.7",
